@@ -19,6 +19,7 @@ def add_student():
 def modify_student():
     xh = input("要修改的学号：")
     if xh in students:
+        stu = students[xh]
         print("原信息：",students[xh])
         xm = input("新姓名：")
         if xm:
@@ -50,12 +51,12 @@ def see_students():
     xh = input("要查找的学号：")
     if xh in students:
         stu = students[xh]
-        print("学号",stu[xh],
-              "姓名",stu[xm],
-              "班级",stu[bj],
-              "性别",stu[xb],
-              "电话",stu[dh],
-              "家庭地址",stu[jtdz],)
+        print("学号：", xh)
+        print("姓名：", stu["姓名"])
+        print("班级：", stu["班级"])
+        print("性别：", stu["性别"])
+        print("电话：", stu["电话"])
+        print("家庭地址：", stu["家庭地址"])
     else:
         print("未找到该学号")
 while True:
