@@ -12,6 +12,6 @@ for d in score_int_list:
         count_dict[d] += 1
     else:
         count_dict[d] = 1
-
 print("成绩列表：", score_int_list)
-print("成绩出现次数：", count_dict)
+for score, count in sorted(count_dict.items(), key=lambda item: item[1], reverse=True):
+    print(score, "分出现", count, "次")
