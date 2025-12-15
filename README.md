@@ -15,7 +15,7 @@
 - Python：3.x（我本机使用 Python 3.13）
 - 编辑器：VS Code
 - 系统：Windows
-
+- 设备：机械革命
 ---
 
 ## 仓库结构
