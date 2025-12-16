@@ -1,5 +1,10 @@
 def parse_scores(scores_str):
-    score_list = scores_str.split(",")
+    if "," in scores_str:
+        score_list = scores_str.split(",")
+    elif "，" in scores_str:
+        score_list = scores_str.split("，")
+    else:
+        print("逗号错误")
     result = []
     for s in score_list:
         clean = s.strip()
@@ -13,11 +18,17 @@ with open("learn/week02/scores.txt", "r", encoding="utf-8") as f:
         line = line.strip()
         if not line:
             continue
-        name_part, score_part = line.split(":")
+        if ":" in line:
+            name_part, score_part = line.split(":")
+        elif "：" in line:
+            name_part, score_part = line.split("：")
+        else:
+            print("格式错误")
+            continue
         name = name_part.strip()
         score_str = score_part.strip()
 
-        scores = parse_scores(score_part)   #将成绩变为整数列表
+        scores = parse_scores(score_str)   #将成绩变为整数列表
         #总分
         totle = 0
         for i in scores:
