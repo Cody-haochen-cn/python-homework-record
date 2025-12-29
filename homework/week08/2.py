@@ -1,0 +1,6 @@
+with open("满江红岳飞.txt", "a", encoding="utf-8")as f:
+    f.write("满江红.写怀\n怒发冲冠，凭栏处、潇潇雨歇。\n抬望眼，仰天长啸，壮怀激烈。\n三十功名尘与土，八千里路云和月。\n莫等闲、白了少年头，空悲切。\n靖康耻，犹未雪。\n臣子恨，何时灭！\n驾长车，踏破贺兰山缺。\n壮志饥餐胡虏肉，笑谈渴饮匈奴血。\n待从头、收拾旧山河，朝天阙。")
+
+with open("满江红岳飞.txt", "r", encoding="utf-8")as f:
+    content = f.read()
+    print(content)
