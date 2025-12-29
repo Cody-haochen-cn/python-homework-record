@@ -24,6 +24,7 @@
 
 ```text
 .
-├─ learn/                 # 学习与练习
-├─ homework/              # 作业区
+├─ learn/                 # 我自己的学习与练习（主要）
+├─ homework/              # 学校的作业区
 ├─ .gitignore/            # 忽略
+├─ README                 # 说明
