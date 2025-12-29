@@ -26,4 +26,4 @@
 .
 ├─ learn/                 # 学习与练习
 ├─ homework/              # 作业区
-├─ test_vscode.py         # 测试 VS Code/环境用
+├─ .gitignore/            # 忽略
